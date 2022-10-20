@@ -21,12 +21,11 @@ public class BriBri_bugItem extends Item {
             output(user);
             user.getItemCooldownManager().set(this, 20);
         }
-
-        return null;
+        return super.use(world, user, hand);
     }
 
-    String[] quotes = {"<BriBri_bug> §o I'm not a fem-boy, uwu", "<BriBri_bug> §o Will you gimme a kiss", "<BriBri_bug> §o moan","<BriBri_bug> §o I am going to kiss you",
-            "<BriBri_bug>§o Thats Racially motivated"};
+    String[] quotes = {"<BriBri_bug>§oI'm not a fem-boy, uwu", "<BriBri_bug>§oWill you gimme a kiss", "<BriBri_bug>§omoan","<BriBri_bug>§oI am going to kiss you",
+            "<BriBri_bug>§oThats Racially motivated"};
     public void output(PlayerEntity player){
         player.sendMessage(Text.literal(quotes[getRandomNumber()]));
     }
