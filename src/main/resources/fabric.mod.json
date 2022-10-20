@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "brianquotes",
+  "version": "${version}",
+
+  "name": "Brian Quotes",
+  "description": "",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/brianquotes/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.catfishyman.brianquotes.BrianQuotes"
+    ],
+    "client": [
+      "net.catfishyman.brianquotes.BrianQuotesClient"
+    ]
+  },
+  "mixins": [
+    "brianquotes.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
