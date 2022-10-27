@@ -2,13 +2,15 @@ package net.catfishyman.brianquotes.item;
 
 import net.catfishyman.brianquotes.BrianQuotes;
 import net.catfishyman.brianquotes.item.Custom.BriBri_bugItem;
+import net.catfishyman.brianquotes.item.Custom.DayquilItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModItems {
+    public static final Item DAYQUIL = registerItem("dayquil",
+            new DayquilItem(new FabricItemSettings().group(ModItemGroup.BRIAN_MOD).maxCount(1)));
 
     public static final Item BRI_BRI_BUG = registerItem("bri_bri_bug",
             new BriBri_bugItem(new FabricItemSettings().group(ModItemGroup.BRIAN_MOD).maxCount(1)));

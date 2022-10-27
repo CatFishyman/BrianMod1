@@ -24,8 +24,8 @@ public class BriBri_bugItem extends Item {
         return super.use(world, user, hand);
     }
 
-    String[] quotes = {"<BriBri_bug>§oI'm not a fem-boy, uwu", "<BriBri_bug>§oWill you gimme a kiss", "<BriBri_bug>§omoan","<BriBri_bug>§oI am going to kiss you",
-            "<BriBri_bug>§oThats Racially motivated"};
+    String[] quotes = {"<BriBri_bug> §oI'm not a fem-boy, uwu", "<BriBri_bug> §oWill you gimme a kiss", "<BriBri_bug> §omoan","<BriBri_bug> §oI am going to kiss you",
+            "<BriBri_bug> §oThats Racially motivated", "<BriBri_bug> §O french horn is actually horrible"};
     public void output(PlayerEntity player){
         player.sendMessage(Text.literal(quotes[getRandomNumber()]));
     }
